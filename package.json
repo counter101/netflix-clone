@@ -1,14 +1,18 @@
 {
+  "homepage": "https://counter101.github.io/netflix-clone",
   "name": "netflix-clone",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  
   "dependencies": {
     "firebase": "^10.13.1",
     "react": "^18.3.1",
